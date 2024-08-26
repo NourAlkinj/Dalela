@@ -1,0 +1,1780 @@
+{
+	"info": {
+		"_postman_id": "ad66c254-d08e-458f-b730-f6b73514b99e",
+		"name": "dalela",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26146304",
+		"_collection_link": "https://www.postman.com/dark-flare-885142/workspace/dalela/collection/26146304-ad66c254-d08e-458f-b730-f6b73514b99e?action=share&source=collection_link&creator=26146304"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "deleteGuide",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/ecmascript",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/delete-guide/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"delete-guide",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAgency",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/ecmascript",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/delete-agency/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"delete-agency",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllReports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/get-all-reports",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"get-all-reports"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "registerAdmin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\":\"admin\"  , \r\n      \"email\": \"admin@email.com\" ,\r\n      \"password\":\"1234\", \r\n      \"password_confirmation\": \"1234\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/register-admin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"register-admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginAdmin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\": \"admin@email.com\" ,\r\n      \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/admin/login-admin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"login-admin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TourGuide",
+			"item": [
+				{
+					"name": "registerTourGuide",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\":\"g1\"  , \r\n      \"email\": \"g1@email.com\" ,\r\n      \"password\":\"1234\", \r\n      \"password_confirmation\": \"1234\" ,\r\n      \"city\":\"syoria\"  ,\r\n      \"phone_number\": \"g1\" ,\r\n      \"gender_guide\":0, \r\n      \"age_guide\":20,\r\n      \"price_guide\":500,\r\n         \"language_guide\":\"arabic\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourGuide/register-tourGuide",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourGuide",
+								"register-tourGuide"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "registerTourGuide",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\":\"noor\"  , \r\n      \"email\": \"nour2@email.com\" ,\r\n      \"password\":\"1234\", \r\n      \"password_confirmation\": \"1234\" ,\r\n      \"city\":\"syoria\"  ,\r\n      \"phone_number\": \"dds34555511vd2\" ,\r\n      \"gender_guide\":0, \r\n      \"age_guide\":20,\r\n      \"price_guide\":500,\r\n         \"language_guide\":\"arabic\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tourGuide/register-tourGuide",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tourGuide",
+										"register-tourGuide"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:55:42 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:55:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"noor\",\n    \"city\": \"syoria\",\n    \"phone_number\": \"dds34555511vd2\",\n    \"email\": \"nour2@email.com\",\n    \"gender_guide\": 0,\n    \"age_guide\": 20,\n    \"price_guide\": 500,\n    \"language_guide\": \"arabic\",\n    \"tour_guide_type\": {\n        \"id\": 2,\n        \"type_title\": \"guide\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "updateTourGuide",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\":\"saraHasan\"  , \r\n    //   \"email\": \"sara@email.com\" ,\r\n    //   \"password\":\"1234\", \r\n    //   \"password_confirmation\": \"1234\" ,\r\n    //   \"city\":\"syoria\"  ,\r\n    //   \"phone_number\": \"saraw\" ,\r\n    //   \"gender_guide\":0, \r\n    //   \"age_guide\":20,\r\n    //   \"price_guide\":500,\r\n         \"language_guide\":\"English\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourGuide/update-tourGuide/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourGuide",
+								"update-tourGuide",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "loginTourGuide",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\": \"g1@email.com\" ,\r\n      \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourGuide/login-tourGuide",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourGuide",
+								"login-tourGuide"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginTourGuide",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"email\": \"nour2@email.com\" ,\r\n      \"password\":\"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tourGuide/login-tourGuide",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tourGuide",
+										"login-tourGuide"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:57:19 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:57:19 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"noor\",\n    \"city\": \"syoria\",\n    \"phone_number\": \"dds34555511vd2\",\n    \"email\": \"nour2@email.com\",\n    \"gender_guide\": 0,\n    \"age_guide\": 20,\n    \"price_guide\": 500,\n    \"language_guide\": \"arabic\",\n    \"tour_guide_type\": {\n        \"id\": 2,\n        \"type_title\": \"guide\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getGuide",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourGuide/get-guide/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourGuide",
+								"get-guide",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllGuides",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourGuide/get-all-guides",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourGuide",
+								"get-all-guides"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getGuideRequests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourGuide/get-guide-requests/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourGuide",
+								"get-guide-requests",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getGuideRates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourGuide/get-guide-rates/2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourGuide",
+								"get-guide-rates",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TourismAgency",
+			"item": [
+				{
+					"name": "loginTourismAgency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\": \"a2@email.com\",\r\n      \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourismAgency/login-tourismAgency",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourismAgency",
+								"login-tourismAgency"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginTourismAgency",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"email\": \"nour5@email.com\" ,\r\n      \"password\":\"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tourismAgency/login-tourismAgency",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tourismAgency",
+										"login-tourismAgency"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:53:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:53:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"noor\",\n    \"city\": \"syoria\",\n    \"phone_number\": \"335\",\n    \"email\": \"nour5@email.com\",\n    \"location_agency\": \"lattakia\",\n    \"commercial_record_agency\": \"21\",\n    \"price_agency\": 500,\n    \"language_agency\": \"arabic\",\n    \"tourism_agency_type\": {\n        \"id\": 3,\n        \"type_title\": \"agency\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "registerTourismAgency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\":\"a2\"  , \r\n     \"email\": \"a2@email.com\" ,\r\n      \"password\":\"1234\", \r\n      \"password_confirmation\": \"1234\" ,\r\n      \"city\":\"syoria\"  ,\r\n      \"phone_number\": \"a2\" ,\r\n      \"location_agency\":\"lattakia\", \r\n      \"commercial_record_agency\":\"3sasma222212\",\r\n      \"price_agency\":500,\r\n       \"language_agency\":\"arabic\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourismAgency/register-tourismAgency",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourismAgency",
+								"register-tourismAgency"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "registerTourismAgency",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\":\"noor\"  , \r\n     \"email\": \"nour5@email.com\" ,\r\n      \"password\":\"1234\", \r\n      \"password_confirmation\": \"1234\" ,\r\n      \"city\":\"syoria\"  ,\r\n      \"phone_number\": \"335\" ,\r\n      \"location_agency\":\"lattakia\", \r\n      \"commercial_record_agency\":\"21\",\r\n      \"price_agency\":500,\r\n       \"language_agency\":\"arabic\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/tourismAgency/register-tourismAgency",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"tourismAgency",
+										"register-tourismAgency"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:52:29 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:52:29 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"noor\",\n    \"city\": \"syoria\",\n    \"phone_number\": \"335\",\n    \"email\": \"nour5@email.com\",\n    \"location_agency\": \"lattakia\",\n    \"commercial_record_agency\": \"21\",\n    \"price_agency\": 500,\n    \"language_agency\": \"arabic\",\n    \"tourism_agency_type\": {\n        \"id\": 3,\n        \"type_title\": \"agency\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllAgencies",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourismAgency/get-all-agencies",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourismAgency",
+								"get-all-agencies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAgency",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourismAgency/get-agency/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourismAgency",
+								"get-agency",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAgencyRequests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourismAgency/get-agency-requests/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourismAgency",
+								"get-agency-requests",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAgencyRates",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourismAgency/get-agency-rates/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourismAgency",
+								"get-agency-rates",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateTourAgency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    //   \"name\":\"sama\"  , \r\n    //  \"email\": \"sama@email.com\" ,\r\n    //   \"password\":\"1234\", \r\n    //   \"password_confirmation\": \"1234\" ,\r\n    //   \"city\":\"syoria\"  ,\r\n    //   \"phone_number\": \"sama335\" ,\r\n    //   \"location_agency\":\"lattakia\", \r\n    //   \"commercial_record_agency\":\"sama21\",\r\n    //   \"price_agency\":500,\r\n       \"language_agency\":\"france\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/tourismAgency/update-tourismAgency/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"tourismAgency",
+								"update-tourismAgency",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "registerUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\":\"u2\"  , \r\n     \"email\": \"u2@email.com\" ,\r\n      \"password\":\"1234\", \r\n      \"password_confirmation\": \"1234\" ,\r\n      \"city\":\"syoria\"  ,\r\n      \"phone_number\": \"u2\" ,\r\n      \"gender_user\":0, \r\n      \"age_user\":25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/register-user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"register-user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "registerUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\":\"noor2\"  , \r\n     \"email\": \"nouor2@email.com\" ,\r\n      \"password\":\"1234\", \r\n      \"password_confirmation\": \"1234\" ,\r\n      \"city\":\"syoria\"  ,\r\n      \"phone_number\": \"nour2\" ,\r\n      \"gender_user\":0, \r\n      \"age_user\":20\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/register-user",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"register-user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:41:34 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:41:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"noor2\",\n    \"city\": \"syoria\",\n    \"phone_number\": \"nour2\",\n    \"email\": \"nouor2@email.com\",\n    \"gender_user\": 0,\n    \"age_user\": 20,\n    \"user_type\": {\n        \"id\": 1,\n        \"type_title\": \"user\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "loginUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"email\":\"karam2@email.com\"  ,\r\n      \"password\":\"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/login-user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"login-user"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "loginUser",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n     \"email\": \"nouor2@email.com\" ,\r\n      \"password\":\"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/user/login-user",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"user",
+										"login-user"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:42:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 10 Mar 2024 13:42:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.4"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 1,\n    \"name\": \"noor2\",\n    \"city\": \"syoria\",\n    \"phone_number\": \"nour2\",\n    \"email\": \"nouor2@email.com\",\n    \"gender_user\": 0,\n    \"age_user\": 20,\n    \"user_type\": {\n        \"id\": 1,\n        \"type_title\": \"user\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/get-user/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"get-user",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getUserRequests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/get-user-requests/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"get-user-requests",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user/search/a",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"search",
+								"a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request",
+			"item": [
+				{
+					"name": "cancelRequest",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/request/cancel-request/15",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"request",
+								"cancel-request",
+								"15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addRequestForGuideOrAgency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"user_id\":2 , \r\n     \"guide_id\":2,\r\n    //   \"agency_id\":2, \r\n      \"request_date\": \"2024-03-10\" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/request/add-request",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"request",
+								"add-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateRequestStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"id\":1,  \r\n      \"status\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/request/update-request-status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"request",
+								"update-request-status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Report",
+			"item": [
+				{
+					"name": "addReportForGuideOrAgency",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"user_id\":1 , \r\n     \"guide_id\":1 ,\r\n    //   \"agency_id\":2, \r\n      \"description\": \"agency is friendly \" \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/report/add-report",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"report",
+								"add-report"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rate",
+			"item": [
+				{
+					"name": "addRateForRequest",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"user_id\":1,\r\n        \"request_id\":2,\r\n        \"description\":\"hello16\",\r\n        \"value\":3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rate/add-rate",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rate",
+								"add-rate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getAllLanguages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/language/get-all-languages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"language",
+						"get-all-languages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllLanguages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/language/get-all-languages",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"language",
+								"get-all-languages"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 28 Feb 2024 20:31:12 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 28 Feb 2024 20:31:12 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"language_name\": \"arabic\"\n    },\n    {\n        \"id\": 2,\n        \"language_name\": \"english\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "getAllUserTypes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/userTypes/get-all-UserTypes",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"userTypes",
+						"get-all-UserTypes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getAllUserTypes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/userTypes/get-all-UserTypes",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userTypes",
+								"get-all-UserTypes"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Mar 2024 19:36:50 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 09 Mar 2024 19:36:50 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.4"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"type_title\": \"user\"\n    },\n    {\n        \"id\": 2,\n        \"type_title\": \"guide\"\n    },\n    {\n        \"id\": 3,\n        \"type_title\": \"agency\"\n    }\n]"
+				}
+			]
+		}
+	]
+}
